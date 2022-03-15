@@ -165,32 +165,32 @@ export default {
     sortLowToHigh(n) {
       if (n == "price") {
         return this.products.sort((a, b) => (a.price > b.price ? 1 : -1));
-        // return 0;
+        
       } else if (n == "location") {
         return this.products.sort((a, b) => (a.location > b.location ? 1 : -1));
-        // return 0;
+        
       } else if (n == "space") {
         return this.products.sort((a, b) => (a.space > b.space ? 1 : -1));
-        // return 0;
+        
       } else if (n == "topic") {
         return this.products.sort((a, b) => (a.topic > b.topic ? 1 : -1));
-        // return 0;
+        
       }
     },
 
     sortHighToLow(n) {
       if (n == "price") {
         return this.products.sort((a, b) => (a.price < b.price ? 1 : -1));
-        // return 0;
+        
       } else if (n == "location") {
         return this.products.sort((a, b) => (a.location < b.location ? 1 : -1));
-        // return 0;
+        
       } else if (n == "space") {
         return this.products.sort((a, b) => (a.space < b.space ? 1 : -1));
-        // return 0;
+        
       } else if (n == "topic") {
         return this.products.sort((a, b) => (a.topic < b.topic ? 1 : -1));
-        // return 0;
+        
       }
     },
 
@@ -202,7 +202,7 @@ export default {
       }
     },
     removeToCart(index, d) {
-      // console.log(index);
+      
       for (let i = 0; i < this.products.length; i++) {
         if (this.products[i]._id === d) {
           this.products[i].space = this.products[i].space + 1;
