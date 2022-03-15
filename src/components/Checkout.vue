@@ -48,7 +48,7 @@ export default {
   props: ["cart"],
   data() {
     return {
-      // basket:[],
+
       order: {
         firstName: "",
         lastName: ""
@@ -61,7 +61,7 @@ export default {
   },
   methods: {
     removeFromCart(index, d) {
-      // console.log(index)
+
       this.$emit("removeFromCart", index, d);
     },
     checkoutDisable(first, second, phone) {
@@ -129,9 +129,7 @@ export default {
       // Match with regex
       else e.preventDefault(); // If not match, don't add to input text
     },
-    // showCheckOut() {
-    //   this.$emit("showCheckoout");
-    // },
+
     submit() {
       alert(`Dear ${this.name}, your order has been submitted! `);
       location.reload();
