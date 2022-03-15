@@ -115,7 +115,7 @@ export default {
           }
         });
 
-      alert("order submitted!");
+      alert("order submitted! thank you");
     },
     acceptNumber() {
       var x = this.phone_value
