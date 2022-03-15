@@ -131,7 +131,7 @@ export default {
     },
 
     submit() {
-      alert(`Dear ${this.name}, your order has been submitted`);
+      alert(`Dear ${this.name}, your order has been submitte`);
       location.reload();
     }
   }
