@@ -1,13 +1,12 @@
 <template>
   <div>
     <div class="product-container">
-      <!-- <section class="product"> -->
+
       <div v-for="product in products" :key="product.id">
         <div class="p-box">
-          <!-- <div class="column"> -->
-          <!-- <figure> -->
+
           <img v-bind:src="product.image" />
-          <!-- </figure> -->
+          
           <h2>Subject: {{product.topic}}</h2>
           <p>Location: {{product.location}}</p>
           <p>Price: £{{product.price}}</p>
@@ -22,11 +21,11 @@
             v-if="canAddToCart(product)"
           >Add to cart</button>
           <button disabled="disabled" v-else>Add to cart</button>
-          <!-- </div> -->
+
         </div>
       </div>
     </div>
-    <!-- </section> -->
+
   </div>
 </template>
 
@@ -39,8 +38,7 @@ export default {
   },
   methods: {
     addToCart(product) {
-      // product.space--;
-      // console.log("emitting value!");
+
       this.$emit("addToCart", product);
     },
 

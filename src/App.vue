@@ -89,7 +89,7 @@
           </p>
 
           <LessonList :products="products" @addToCart="addProduct" />
-          <!-- <button disabled='disabled' v-else> Add to cart </button> -->
+         
         </div>
       </section>
     </div>
@@ -152,7 +152,7 @@ export default {
         })
         .then(_lessons => {
           this.products = _lessons;
-          // console.log(webstore.products.length);
+          
         });
     },
     addProduct(product) {
@@ -212,13 +212,7 @@ export default {
     }
   },
   computed: {
-    // itemsInCart: function() {
-    //   let count = 0;
-    //   this.cart.forEach(item => {
-    //     count += item.space;
-    //   });
-    //   return count;
-    // }
+
   },
   created: function() {
     fetch("https://cw2-web-app.herokuapp.com/collection/lessons/")
@@ -227,7 +221,7 @@ export default {
       })
       .then(_lessons => {
         this.products = _lessons;
-        // console.log(webstore.products.length);
+        
       });
   }
 };
