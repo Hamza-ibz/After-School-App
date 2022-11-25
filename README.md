@@ -8,6 +8,9 @@
 - Node.js
 - Vue.js
 
+<img width="730" alt="Screenshot 2022-11-25 at 16 47 50" src="https://user-images.githubusercontent.com/93152488/204028263-879821d6-8168-4774-b378-0cca241202e6.png">
+
+
 ## Project setup
 ```
 npm install
