@@ -1,4 +1,12 @@
-# cw3-final
+# After School Club
+
+# Skills Used
+
+- MongoDB
+- Middleware
+- REST API
+- Node.js
+- Vue.js
 
 ## Project setup
 ```
